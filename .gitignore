@@ -1,0 +1,40 @@
+# Dependencies (restore with `npm install`; package-lock.json stays tracked)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tgz
+
+# Credentials: set JIRA_* in the OS environment, never in files (see README.md)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local test skill: notes contain real Jira content, only its README is tracked (see test-skill/README.md)
+test-skill/*
+!test-skill/README.md
+
+# Per-user Claude Code settings (personal permissions and paths)
+.claude/settings.local.json
+
+# Logs, temp files and caches
+*.log
+*.tmp
+*.bak
+.cache/
+.eslintcache
+coverage/
+
+# Editors and OS files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
